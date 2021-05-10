@@ -25,7 +25,7 @@ This projects supports two user interaction interfaces
 3. user will get appropriate string response as a result after using any of the above mentioned route
 
 ### Required Classes
-Class IWordFrequency and Class IWordFrequencyAnalyzer are in src/iword_frequency.py
+IWordFrequency and IWordFrequencyAnalyzer are defined in src/iword_frequency.py
 
 ## Run Tests
 Pytest is used for testing class methods, to run Pytest, please keep the code files mimicking the directory structure
