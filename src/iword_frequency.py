@@ -1,3 +1,4 @@
+"""This module contains class IWordFrequency and IWordFrequencyAnalyzer"""
 from collections import Counter
 from itertools import starmap
 from typing import List
