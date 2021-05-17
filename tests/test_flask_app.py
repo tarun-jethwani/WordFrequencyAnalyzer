@@ -1,11 +1,13 @@
 """ this module contains test functions to test flask app client url routes """
 # load url constants
-from tests.test_data.inputs import (URL_ERROR_FREQUENCY_FOR_WORD,
-                                    URL_ERROR_HIGHEST_FREQUENCY,
-                                    URL_ERROR_MOST_FREQUENT_WORDS,
-                                    URL_FREQUENCY_FOR_WORD,
-                                    URL_HIGHEST_FREQUENCY,
-                                    URL_MOST_FREQUENT_N_WORDS)
+from tests.test_data.inputs import (
+    URL_ERROR_FREQUENCY_FOR_WORD,
+    URL_ERROR_HIGHEST_FREQUENCY,
+    URL_ERROR_MOST_FREQUENT_WORDS,
+    URL_FREQUENCY_FOR_WORD,
+    URL_HIGHEST_FREQUENCY,
+    URL_MOST_FREQUENT_N_WORDS,
+)
 
 
 # client argument is received from text fixture
@@ -51,7 +53,7 @@ def test_most_frequent_n_words(client):
     """
     response = client.get(URL_MOST_FREQUENT_N_WORDS)
     output = response.data.decode("utf-8").split("are ")
-    assert str([('the', 2), ('lake', 1)]) == output[1]
+    assert str([("the", 2), ("lake", 1)]) == output[1]
 
 
 def test_error_in_highest_frequency(client):

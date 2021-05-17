@@ -8,7 +8,7 @@ from .utils.text_utils import find_words
 
 
 class IWordFrequency:
-    """ Class to track occurrence of word and its frequency
+    """Class to track occurrence of word and its frequency
 
     Attributes
     ----------
@@ -20,7 +20,7 @@ class IWordFrequency:
     """
 
     def __init__(self, word: str, frequency: int):
-        """ initialises word and its frequency
+        """initialises word and its frequency
 
         Parameters
         ----------
@@ -49,8 +49,9 @@ class IWordFrequency:
     @property
     def frequency(self) -> int:
         """int: frequency of the word of the instance referenced by self"""
-        logger.debug(f"get frequency attribute of IWordFrequency"
-                     f" {self.__frequency}")
+        logger.debug(
+            f"get frequency attribute of IWordFrequency" f" {self.__frequency}"
+        )
         return self.__frequency
 
     def validate_params(self, word: str, frequency: int) -> tuple:
@@ -79,14 +80,15 @@ class IWordFrequency:
         if not isinstance(frequency, int):
             raise TypeError("frequency should be integer")
         if frequency < 1:
-            raise ValueError("Cannot create instance for "
-                             "word which does not occur")
+            raise ValueError(
+                "Cannot create instance for " "word which does not occur"
+            )
 
         return word, frequency
 
 
 class IWordFrequencyAnalyzer:
-    """ A class to perform word-frequency operations, does
+    """A class to perform word-frequency operations, does
     not require instance variables
     """
 
@@ -162,8 +164,7 @@ class IWordFrequencyAnalyzer:
         logger.info(f"count of {word} in {text} is {word_count}")
         return word_count
 
-    def calculate_most_frequent_n_words(self, text: str,
-                                        n: int) -> List:
+    def calculate_most_frequent_n_words(self, text: str, n: int) -> List:
         """
         calculates n most frequent words out of all the word present in
         input text, by comparing all the instances of word,frequency pairs
@@ -191,8 +192,9 @@ class IWordFrequencyAnalyzer:
             logger.debug("ValueError : text is empty")
             raise ValueError("text is empty")
         if n < 1:
-            logger.debug("ValueError : most frequent words should"
-                         " be at least 1")
+            logger.debug(
+                "ValueError : most frequent words should" " be at least 1"
+            )
             raise ValueError("most frequent words should be at least 1")
 
         all_words = find_words(text)
@@ -206,7 +208,8 @@ class IWordFrequencyAnalyzer:
 
         # creating list of tuples of word, frequency
         # by fetching word and frequency of each item from iterator
-        word_frequency_list = [(item.word, item.frequency)
-                               for item in iter_list]
+        word_frequency_list = [
+            (item.word, item.frequency) for item in iter_list
+        ]
         logger.info(f"list of word frequencies : {word_frequency_list}")
         return word_frequency_list

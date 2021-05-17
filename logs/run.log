@@ -1,0 +1,436 @@
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:42,685 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+highest frequency : 2
+2021-05-17 20:46:42,686 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 2
+2
+2021-05-17 20:46:42,686 app.py     highest_frequency INFO     2
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:42,698 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+count of over in The sun shines over the lake is 1
+2021-05-17 20:46:42,698 iword_frequency.py calculate_frequency_for_word INFO     count of over in The sun shines over the lake is 1
+result
+2021-05-17 20:46:42,698 app.py     calculate_frequency_for_word INFO     result
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:42,701 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1)]
+2021-05-17 20:46:42,701 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1)]
+[('the', 2), ('lake', 1)]
+2021-05-17 20:46:42,701 app.py     calculate_most_frequent_n_words INFO     [('the', 2), ('lake', 1)]
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:46:42,706 app.py     highest_frequency ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:46:42,714 app.py     calculate_frequency_for_word ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+2021-05-17 20:46:42,718 app.py     calculate_most_frequent_n_words ERROR    ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:42,753 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+highest frequency : 3
+2021-05-17 20:46:42,753 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 3
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:42,760 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+highest frequency : 4
+2021-05-17 20:46:42,761 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 4
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:42,783 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+2021-05-17 20:46:42,783 iword_frequency.py calculate_frequency_for_word INFO     count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:42,800 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+2021-05-17 20:46:42,800 iword_frequency.py calculate_frequency_for_word INFO     count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:42,815 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+list of word frequencies : [('mango', 3), ('apple', 2)]
+2021-05-17 20:46:42,815 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('mango', 3), ('apple', 2)]
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:42,829 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:42,831 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+2021-05-17 20:46:42,831 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:42,845 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+displays option map to user
+2021-05-17 20:46:42,850 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+received user option 3
+2021-05-17 20:46:42,850 iword_frequency_executor.py get_option_from_user INFO     received user option 3
+received value of text is The sun shines over the lake
+2021-05-17 20:46:42,856 iword_frequency_executor.py get_function_arguments INFO     received value of text is The sun shines over the lake
+received value of n is 3
+2021-05-17 20:46:42,856 iword_frequency_executor.py get_function_arguments INFO     received value of n is 3
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:42,856 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:46:42,856 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:46:42,856 iword_frequency_executor.py execute_function INFO     Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+displays option map to user
+2021-05-17 20:46:42,859 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:57,305 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+highest frequency : 2
+2021-05-17 20:46:57,305 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 2
+2
+2021-05-17 20:46:57,305 app.py     highest_frequency INFO     2
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:57,310 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+count of over in The sun shines over the lake is 1
+2021-05-17 20:46:57,311 iword_frequency.py calculate_frequency_for_word INFO     count of over in The sun shines over the lake is 1
+result
+2021-05-17 20:46:57,311 app.py     calculate_frequency_for_word INFO     result
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:57,314 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1)]
+2021-05-17 20:46:57,314 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1)]
+[('the', 2), ('lake', 1)]
+2021-05-17 20:46:57,314 app.py     calculate_most_frequent_n_words INFO     [('the', 2), ('lake', 1)]
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:46:57,318 app.py     highest_frequency ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:46:57,324 app.py     calculate_frequency_for_word ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+2021-05-17 20:46:57,330 app.py     calculate_most_frequent_n_words ERROR    ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:57,364 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+highest frequency : 3
+2021-05-17 20:46:57,364 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 3
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:57,372 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+highest frequency : 4
+2021-05-17 20:46:57,372 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 4
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:57,381 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+2021-05-17 20:46:57,381 iword_frequency.py calculate_frequency_for_word INFO     count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:57,394 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+2021-05-17 20:46:57,395 iword_frequency.py calculate_frequency_for_word INFO     count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:57,407 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+list of word frequencies : [('mango', 3), ('apple', 2)]
+2021-05-17 20:46:57,407 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('mango', 3), ('apple', 2)]
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:46:57,421 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:57,423 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+2021-05-17 20:46:57,423 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:46:57,435 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+displays option map to user
+2021-05-17 20:46:57,440 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+received user option 3
+2021-05-17 20:46:57,440 iword_frequency_executor.py get_option_from_user INFO     received user option 3
+received value of text is The sun shines over the lake
+2021-05-17 20:46:57,445 iword_frequency_executor.py get_function_arguments INFO     received value of text is The sun shines over the lake
+received value of n is 3
+2021-05-17 20:46:57,445 iword_frequency_executor.py get_function_arguments INFO     received value of n is 3
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:46:57,445 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:46:57,446 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:46:57,446 iword_frequency_executor.py execute_function INFO     Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+displays option map to user
+2021-05-17 20:46:57,449 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:48:33,039 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+highest frequency : 2
+2021-05-17 20:48:33,040 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 2
+2
+2021-05-17 20:48:33,040 app.py     highest_frequency INFO     2
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:48:33,046 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+count of over in The sun shines over the lake is 1
+2021-05-17 20:48:33,046 iword_frequency.py calculate_frequency_for_word INFO     count of over in The sun shines over the lake is 1
+result
+2021-05-17 20:48:33,047 app.py     calculate_frequency_for_word INFO     result
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:48:33,052 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1)]
+2021-05-17 20:48:33,052 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1)]
+[('the', 2), ('lake', 1)]
+2021-05-17 20:48:33,053 app.py     calculate_most_frequent_n_words INFO     [('the', 2), ('lake', 1)]
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:48:33,056 app.py     highest_frequency ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:48:33,060 app.py     calculate_frequency_for_word ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+2021-05-17 20:48:33,064 app.py     calculate_most_frequent_n_words ERROR    ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:48:33,095 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+highest frequency : 3
+2021-05-17 20:48:33,095 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 3
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:48:33,105 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+highest frequency : 4
+2021-05-17 20:48:33,105 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 4
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:48:33,113 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+2021-05-17 20:48:33,113 iword_frequency.py calculate_frequency_for_word INFO     count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:48:33,125 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+2021-05-17 20:48:33,125 iword_frequency.py calculate_frequency_for_word INFO     count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:48:33,139 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+list of word frequencies : [('mango', 3), ('apple', 2)]
+2021-05-17 20:48:33,140 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('mango', 3), ('apple', 2)]
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:48:33,152 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:48:33,154 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+2021-05-17 20:48:33,154 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:48:33,168 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+<MagicMock name='input' id='4503778864'>
+2021-05-17 20:48:33,171 test_iword_frequency_executor.py test_get_user_option INFO     <MagicMock name='input' id='4503778864'>
+displays option map to user
+2021-05-17 20:48:33,172 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+received user option 3
+2021-05-17 20:48:33,172 iword_frequency_executor.py get_option_from_user INFO     received user option 3
+received value of text is The sun shines over the lake
+2021-05-17 20:48:33,175 iword_frequency_executor.py get_function_arguments INFO     received value of text is The sun shines over the lake
+received value of n is 3
+2021-05-17 20:48:33,175 iword_frequency_executor.py get_function_arguments INFO     received value of n is 3
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:48:33,176 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:48:33,176 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:48:33,176 iword_frequency_executor.py execute_function INFO     Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+displays option map to user
+2021-05-17 20:48:33,179 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:52:46,236 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+highest frequency : 2
+2021-05-17 20:52:46,236 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 2
+2
+2021-05-17 20:52:46,236 app.py     highest_frequency INFO     2
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:52:46,243 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+count of over in The sun shines over the lake is 1
+2021-05-17 20:52:46,243 iword_frequency.py calculate_frequency_for_word INFO     count of over in The sun shines over the lake is 1
+result
+2021-05-17 20:52:46,244 app.py     calculate_frequency_for_word INFO     result
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:52:46,248 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1)]
+2021-05-17 20:52:46,249 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1)]
+[('the', 2), ('lake', 1)]
+2021-05-17 20:52:46,249 app.py     calculate_most_frequent_n_words INFO     [('the', 2), ('lake', 1)]
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:52:46,255 app.py     highest_frequency ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 56, in highest_frequency
+    result = word_frequency_analyzer.calculate_highest_frequency(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 119, in calculate_highest_frequency
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+2021-05-17 20:52:46,264 app.py     calculate_frequency_for_word ERROR    ValueError : input text value is invalid
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 89, in calculate_frequency_for_word
+    calculate_frequency_for_word(text, word)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/iword_frequency.py", line 161, in calculate_frequency_for_word
+    all_words = find_words(text)
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/src/utils/text_utils.py", line 31, in find_words
+    raise ValueError("input text value is invalid")
+ValueError: input text value is invalid
+ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+2021-05-17 20:52:46,269 app.py     calculate_most_frequent_n_words ERROR    ValueError : invalid literal for int() with base 10: 'the'
+Traceback (most recent call last):
+  File "/Users/tarunjethwani/Desktop/rabo2/RaboCodingAssignment/app.py", line 121, in calculate_most_frequent_n_words
+    n = int(n)
+ValueError: invalid literal for int() with base 10: 'the'
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:52:46,310 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+highest frequency : 3
+2021-05-17 20:52:46,311 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 3
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:52:46,319 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+highest frequency : 4
+2021-05-17 20:52:46,319 iword_frequency.py calculate_highest_frequency INFO     highest frequency : 4
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:52:46,329 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+2021-05-17 20:52:46,329 iword_frequency.py calculate_frequency_for_word INFO     count of guava in ##@Apple&^*_Mango08%$Orange#$%Mango;guava::Guava$Banana#Mango?/Orange*apple(Banana: is 2
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:52:46,345 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+2021-05-17 20:52:46,345 iword_frequency.py calculate_frequency_for_word INFO     count of jasmin in ##@Rose&^*_Tulip08%$sunflower#*&tulip$%lily;tulip::Rose$#>SunFlower?Lotus?jasmin*lily(tulip: is 1
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:52:46,361 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+list of word frequencies : [('mango', 3), ('apple', 2)]
+2021-05-17 20:52:46,361 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('mango', 3), ('apple', 2)]
+all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+2021-05-17 20:52:46,376 text_utils.py find_words   INFO     all words found in text ['apple', 'mango', 'orange', 'mango', 'guava', 'guava', 'banana', 'mango', 'orange', 'apple', 'banana']
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:52:46,378 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+2021-05-17 20:52:46,378 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('tulip', 4), ('lily', 2), ('rose', 2)]
+all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+2021-05-17 20:52:46,393 text_utils.py find_words   INFO     all words found in text ['rose', 'tulip', 'sunflower', 'tulip', 'lily', 'tulip', 'rose', 'sunflower', 'lotus', 'jasmin', 'lily', 'tulip']
+object of type <class 'unittest.mock.MagicMock'>
+2021-05-17 20:52:46,397 test_iword_frequency_executor.py test_get_user_option INFO     object of type <class 'unittest.mock.MagicMock'>
+displays option map to user
+2021-05-17 20:52:46,397 iword_frequency_executor.py get_option_from_user INFO     displays option map to user
+received user option 3
+2021-05-17 20:52:46,397 iword_frequency_executor.py get_option_from_user INFO     received user option 3
+received value of text is The sun shines over the lake
+2021-05-17 20:52:46,402 iword_frequency_executor.py get_function_arguments INFO     received value of text is The sun shines over the lake
+received value of n is 3
+2021-05-17 20:52:46,402 iword_frequency_executor.py get_function_arguments INFO     received value of n is 3
+all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+2021-05-17 20:52:46,402 text_utils.py find_words   INFO     all words found in text ['the', 'sun', 'shines', 'over', 'the', 'lake']
+list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:52:46,403 iword_frequency.py calculate_most_frequent_n_words INFO     list of word frequencies : [('the', 2), ('lake', 1), ('over', 1)]
+Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+2021-05-17 20:52:46,403 iword_frequency_executor.py execute_function INFO     Most frequent 3 words are [('the', 2), ('lake', 1), ('over', 1)]
+displays option map to user
+2021-05-17 20:52:46,405 iword_frequency_executor.py get_option_from_user INFO     displays option map to user

@@ -1,5 +1,6 @@
 """ This module contains test cases for IWordFrequencyExecutor Class """
 import unittest
+
 # to mock builtins input() method
 from unittest.mock import patch
 
@@ -14,6 +15,7 @@ class MyTestCase(unittest.TestCase):
     this test class test methods of IWordFrequencyExecutor
     class, tests valid user inputs and reset of options map
     """
+
     @classmethod
     def setUpClass(cls) -> None:
         """
@@ -26,12 +28,12 @@ class MyTestCase(unittest.TestCase):
     def tearDownClass(cls) -> None:
         del cls.executor
 
-    @patch('builtins.input', return_value=NUM_STRING)
+    @patch("builtins.input", return_value=NUM_STRING)
     def test_get_user_option(self, _):
         self.executor.get_option_from_user()
         self.assertEqual(self.executor.user_option, 3)
 
-    @patch('builtins.input', return_value=INVALID_NUM_STRING)
+    @patch("builtins.input", return_value=INVALID_NUM_STRING)
     def test_value_error_in_user_option(self, _):
         """
         if the option entered by user is invalid, it raises
@@ -40,7 +42,7 @@ class MyTestCase(unittest.TestCase):
         """
         self.assertRaises(ValueError, self.executor.get_option_from_user)
 
-    @patch('builtins.input', side_effect=PARAMS)
+    @patch("builtins.input", side_effect=PARAMS)
     def test_reset(self, _):
         """
         test whether the parameter or arguments of the options map
@@ -49,6 +51,7 @@ class MyTestCase(unittest.TestCase):
         """
         self.executor.get_function_arguments()
         self.executor.execute_function()
-        value = self.executor.options_map[self.executor.user_option][
-                                          'params']['text']
+        value = self.executor.options_map[self.executor.user_option]["params"][
+            "text"
+        ]
         self.assertEqual(value, None)
