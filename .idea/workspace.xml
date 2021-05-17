@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a95ce33b-82be-4366-81d0-54547a124458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/iword_frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/iword_frequency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_data/inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data/inputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_flask_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_iword_frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_iword_frequency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_iword_frequency_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_iword_frequency_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_iword_frequency_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_iword_frequency_executor.py" afterDir="false" />
-    </list>
+    <list default="true" id="a95ce33b-82be-4366-81d0-54547a124458" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
