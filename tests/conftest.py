@@ -73,8 +73,9 @@ def params_highest_frequency(request):
     """
     frequency_analyzer = IWordFrequencyAnalyzer()
     try:
-        output = frequency_analyzer. \
-            calculate_highest_frequency(request.param[0])
+        output = frequency_analyzer.calculate_highest_frequency(
+            request.param[0]
+        )
     except (ValueError, TypeError) as e:
         output = str(e)
 
@@ -104,8 +105,9 @@ def params_word_frequency(request):
     """
     frequency_analyzer = IWordFrequencyAnalyzer()
     try:
-        output = frequency_analyzer. \
-            calculate_frequency_for_word(request.param[0], request.param[1])
+        output = frequency_analyzer.calculate_frequency_for_word(
+            request.param[0], request.param[1]
+        )
     except (ValueError, TypeError) as e:
         output = str(e)
 
@@ -135,9 +137,9 @@ def params_most_common(request):
     """
     frequency_analyzer = IWordFrequencyAnalyzer()
     try:
-        output = frequency_analyzer. \
-            calculate_most_frequent_n_words(request.param[0],
-                                            request.param[1])
+        output = frequency_analyzer.calculate_most_frequent_n_words(
+            request.param[0], request.param[1]
+        )
     except (ValueError, TypeError) as e:
         output = str(e)
 
