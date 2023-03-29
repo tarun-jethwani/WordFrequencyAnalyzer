@@ -41,13 +41,13 @@ RaboCodingAssignment
 ├── logs # will be created automatically 
 ├── src  # python package
 │   ├── utils # python package to contain utility modules
-│   │   ├── __init__.py   # to make directory into package
+│   │   ├── __init__.py  
 │   │   ├── config.py     # contains configuration control variables for logs
 │   │   ├── log_utils.py  # defines logger for entire app
 │   │   ├── main_utils.py # contains utility functions used indirectly by main.py
 │   │   └── text_utils.py # contains utility functions to process text
 │   │
-│   ├── __init__.py        # to make directory into package
+│   ├── __init__.py        
 │   ├── constant.py        # holds constants
 │   ├── iword_frequency.py # contains IWordFrequency and IWordFrequencyAnalyzer classes
 │   └── iword_frequency_executor.py # contains Executor class to execute 
@@ -55,7 +55,7 @@ RaboCodingAssignment
 │    
 ├── tests # test directory 
 │   ├── test_data  # python package
-│   │   ├── __init__.py  # to make directory into package
+│   │   ├── __init__.py  
 │   │   └── inputs.py    # contains test_inputs
 │   │  
 │   ├── __init__.py
