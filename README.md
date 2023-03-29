@@ -1,4 +1,4 @@
-# Python Coding Assignment
+# Word Frequency Analyzer
 
 ## Usage
 
